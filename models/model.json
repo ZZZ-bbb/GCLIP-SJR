@@ -1,0 +1,16 @@
+{
+  "name": "gmm_diag_k3_seed42",
+  "model_file": "gmm_diag_k3_seed42.npz",
+  "model_sha256": "c849fd1fd8b045535878495e917cfdc62c6d875ddb0d9170b496fe1702e90e3e",
+  "encoder_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "encoder_name": "dinov2_vits14",
+  "foreground_components": [
+    2
+  ],
+  "semantic_method": "source-only CLIP region cosine margin",
+  "input_size": 1120,
+  "feature_dimension": 384,
+  "assignment_record_sha256": "9e3fd1e7831e72c5980b24662d2447852536142a4be70ef6622bde39ed1f484c",
+  "target_training": false,
+  "model_refit": false
+}
