@@ -1,0 +1,45 @@
+{
+  "protocol_id": "source_only_clip_region_alignment_v1_20260908",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "text_classes": {
+    "panicle": [
+      "a photo of rice panicles.",
+      "a photo of green immature rice panicles with upright compact spikelets.",
+      "a photo of golden mature rice panicles with grains."
+    ],
+    "leaf": [
+      "a photo of rice leaves.",
+      "a photo of long narrow green rice leaves.",
+      "a photo of rice foliage."
+    ],
+    "background": [
+      "a photo of soil in a rice field.",
+      "a photo of water in a rice field.",
+      "a photo of rice stems and field background."
+    ]
+  },
+  "region_view": "Preserve every component pixel of the 1120-square resized synthetic RGB image; replace all other pixels with RGB [123,117,104], the rounded CLIP normalization mean. No component bounding-box crop. Apply official CLIP bicubic resize/center-crop to 224 and CLIP normalization.",
+  "neutral_rgb": [
+    123,
+    117,
+    104
+  ],
+  "score": "L2-normalize each text embedding, mean the three templates per class, L2-normalize that mean. L2-normalize the CLIP embedding of each component-masked image. Score = cosine(panicle) - max(cosine(leaf), cosine(background)); mean score equally over the fixed 20 source images; select one component by largest mean, ties by lower index.",
+  "empty_component": "Abort; no zero imputation or skipping.",
+  "gmm_seeds": [
+    7,
+    42,
+    3407
+  ],
+  "fit_or_train": false,
+  "target_tuning": false,
+  "evaluation": "After source assignments are frozen, reaggregate archived per-component target confusion matrices for the identical SHA256-checked GMMs. This is exact evaluation of changed component semantics, not new target feature inference.",
+  "test_counts": {
+    "public": 85,
+    "cvrp": 463,
+    "paddy": 2187
+  },
+  "inference_precision": "float32; DINO cache-compatible float16 token round trip; no autocast, no TF32",
+  "scope": "Controlled synthetic-source GMM semantic assignment only. Does not establish results for real-source, dual-source or counting models. Fixed before new CLIP inference and target reaggregation."
+}
