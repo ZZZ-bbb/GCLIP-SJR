@@ -1,0 +1,2 @@
+# Install base requirements first. See README.md for compiler/build prerequisites.
+pydensecrf @ git+https://github.com/lucasb-eyer/pydensecrf.git@2723c7fa4f2ead16ae1ce3d8afe977724bb8f87f

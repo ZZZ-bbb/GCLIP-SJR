@@ -1,0 +1,2 @@
+# Preserve the exact bytes used by model bindings and FILES.json on every OS.
+* -text

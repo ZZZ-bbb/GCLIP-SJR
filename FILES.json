@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 86,
+      "sha256": "b627e2dce1ecf7cec69f1a432af2c77fd47ccd50d6b7f6d06046850f278f3899"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 115,
+      "sha256": "4feba3f97debfbfb26be996a6f67eddf65293b7e94881a19781f1d16a4164f8d"
+    },
+    {
+      "path": "calibrate_clip.py",
+      "bytes": 5448,
+      "sha256": "8568d3fbd09407278a9cc1c1d592650d826371c8d5effea2b9a8f48115e1a361"
+    },
+    {
+      "path": "configs/clip_prompts.json",
+      "bytes": 2238,
+      "sha256": "e4e1a1e32d4c959f8682b9f1f8aeea8777a26dd28d7fa407971a764cfe150eb5"
+    },
+    {
+      "path": "configs/dinov2_source.json",
+      "bytes": 18341,
+      "sha256": "513138ff62228f34a7a98fd9c70213cdd7fcd234d01c878f0a939b5c3b497d37"
+    },
+    {
+      "path": "controlled_source_clustering.py",
+      "bytes": 8572,
+      "sha256": "470c5d127b8a62cee8677c2d4b1a120c761795c48b2473ea0f4adc2996887a5e"
+    },
+    {
+      "path": "data/calibration20.json",
+      "bytes": 5649,
+      "sha256": "36094861fb26511aae97cc0811cc7daddfc642c6d76378bf5351bd770e7134e2"
+    },
+    {
+      "path": "data/clip_assignment_scores.json",
+      "bytes": 52167,
+      "sha256": "9e3fd1e7831e72c5980b24662d2447852536142a4be70ef6622bde39ed1f484c"
+    },
+    {
+      "path": "data/source_views14000.json",
+      "bytes": 4439413,
+      "sha256": "7653b9b254e95e9e5e77db3ab06b7ee83524199472e6c0b9476a22e0d253e2b5"
+    },
+    {
+      "path": "docs/PROTOCOL.md",
+      "bytes": 2784,
+      "sha256": "e80a87551334ac118b17b4d6923e2a4e56eff9344a310dd497949e0e6f5805ad"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 1202,
+      "sha256": "1860821a70423db256f0309587ea598b63ad36b2a60c7e681cf68b95b672c93c"
+    },
+    {
+      "path": "download_weights.py",
+      "bytes": 2979,
+      "sha256": "da08259b894133ec7e0376deb203e784037641d628afa2403beb50e5392f7bc4"
+    },
+    {
+      "path": "extract_source.py",
+      "bytes": 2942,
+      "sha256": "768c308e9324a375396bf742262a71fc80aac7c0934adb1fd7b66137a0ad1e29"
+    },
+    {
+      "path": "features.py",
+      "bytes": 2962,
+      "sha256": "e8034265061a5aabba5e1cca541b4348af7a31ab756681a703c85cf7269c1cc4"
+    },
+    {
+      "path": "fit_source.py",
+      "bytes": 1731,
+      "sha256": "f759a1b75ff9057408fee94ff3b3fb139b0ac1f320f3bbfecd17b573dc85b02c"
+    },
+    {
+      "path": "models/gmm_diag_k3_seed42.npz",
+      "bytes": 18556,
+      "sha256": "c849fd1fd8b045535878495e917cfdc62c6d875ddb0d9170b496fe1702e90e3e"
+    },
+    {
+      "path": "models/model.json",
+      "bytes": 602,
+      "sha256": "950c9ffe86f0437d676e6cfb4a6015138370d7d3743367197cd6655e491c8e53"
+    },
+    {
+      "path": "predict.py",
+      "bytes": 6563,
+      "sha256": "6c3cee01f062c34b5db6c594a9336688beec99bd6b96cf9235a6784c071adf5a"
+    },
+    {
+      "path": "prepare_inputs.py",
+      "bytes": 812,
+      "sha256": "7f0db174fded924c7c6fe53ebdb561dc78519b899b1df37e8e3bd5bec51fc315"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5549,
+      "sha256": "314d9ac159f00f0c2896f6d6b3898c01dd1e3e1985fc17ac860be7ea0164e53c"
+    },
+    {
+      "path": "requirements-calibration.txt",
+      "bytes": 41,
+      "sha256": "49d60e619ef385ff8ab6ef35bf262917978bf8938616e0c0ea25e896ed9436d4"
+    },
+    {
+      "path": "requirements-sjr.txt",
+      "bytes": 187,
+      "sha256": "8d392e7554497272db168756b646a366af017908343a1c3283ca7d04574c1925"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 155,
+      "sha256": "17fab5d2979fc13c347b43ea964d32f904355819f0066dea95899431b6d41d32"
+    },
+    {
+      "path": "sjr.py",
+      "bytes": 5751,
+      "sha256": "f5d58c7aa75c3714eaac6b2cfdde74bb07df4d95d14920ffce0d6b31c04072f2"
+    },
+    {
+      "path": "third_party/pamr.py",
+      "bytes": 3611,
+      "sha256": "e43d6ee9df718ee22b21bfaa966fed530f1deea0405297e1de36c6be1a8ab77a"
+    },
+    {
+      "path": "third_party/PAMR_LICENSE.txt",
+      "bytes": 10475,
+      "sha256": "6d345fdc8e524ba05cf4e1ff085f36ec58fe9a8a34dc43887e604fc6887f94b7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1943,
+      "sha256": "435c83f161bcf55ec53813370515f2a867bcb3e54545a10177f55a6a2911481c"
+    }
+  ]
+}
